@@ -1,0 +1,109 @@
+:root {
+    --primary: #457fba;
+    --secondary: #f0f4f3;
+    --accent: #F39C12;
+}
+body {
+    background-color: #808080;
+    margin: 2;
+    padding: 6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: var(--primary);
+}
+
+.navbar-brand, .nav-link {
+    color: rgb(6, 6, 6) !important;
+}
+
+.nav-link:hover {
+    color: var(--secondary) !important;
+}
+
+h1, h2, h3 {
+    color: var(--primary);
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.banner-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-img-top.rounded-circle {
+    width: 150px;
+    height: 150px;
+}
+
+footer {
+    background-color: var(--primary);
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: var(--secondary);
+}
+
+.contact-card {
+    transition: transform 0.3s;
+}
+
+.contact-card:hover {
+    transform: scale(1.05);
+}
+
+form.shadow {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .banner-img {
+        height: 300px;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+    
+    .card-img-top.rounded-circle {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .display-6 {
+        font-size: 1.5rem;
+    }
+}
